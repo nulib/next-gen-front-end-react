@@ -63,11 +63,11 @@ const MobileLinks = props => {
           <div className="search-form group">
             <form onSubmit={handleSubmit} role="search">
               <label className="hide-label" htmlFor="mobile-search-input">
-                Search this site
+                Search the collection
               </label>
               <input
                 id="mobile-search-input"
-                placeholder="Search this site"
+                placeholder="Search the collection"
                 type="text"
                 onChange={e => handleChange(e)}
               />

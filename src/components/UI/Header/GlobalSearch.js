@@ -34,7 +34,7 @@ const GlobalSearch = () => {
             Search this website
           </label>
           <input
-            placeholder="Search this site"
+            placeholder="Search the collection"
             type="text"
             value={searchValue}
             onChange={handleSearchChange}

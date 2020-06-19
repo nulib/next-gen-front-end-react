@@ -201,22 +201,20 @@ class OpenSeadragonViewer extends Component {
 
   render() {
     const { currentTileSource } = this.state;
-    const { tileSources = [] } = this.props;
+    const { itemTitle, tileSources = [] } = this.props;
 
     return (
       <div>
+        <div className="osd-top-row">
+          <div className="work-title">{itemTitle}</div>
+          <WorkOpenSeadragonFilesetReactSelect
+            currentTileSource={currentTileSource}
+            onFileSetChange={this.handleFilesetSelectChange}
+            tileSources={tileSources}
+          />
+        </div>
         <div className="open-seadgragon-top-bar-wrapper">
-          <div
-            className={`open-seadgragon-top-bar ${
-              tileSources.length < 2 ? "centered" : ""
-            }`}
-          >
-            <WorkOpenSeadragonFilesetReactSelect
-              currentTileSource={currentTileSource}
-              onFileSetChange={this.handleFilesetSelectChange}
-              tileSources={tileSources}
-            />
-
+          <div className={`open-seadgragon-top-bar`}>
             <div id="toolbarDiv" className="toolbar">
               <WorkOpenSeadragonToolBar
                 isMobile={isMobile}
