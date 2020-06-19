@@ -19,7 +19,7 @@ export const IIIF_MEDIUM_ITEM_REGION =
 
 export const IIIF_PHOTO_FEATURE_REGION =
   process.env.REACT_APP_IIIF_PHOTO_FEATURE_REGION ||
-  "/pct:10,10,60,60/480,350/0/default.jpg";
+  "/pct:10,10,90,90/480,350/0/default.jpg";
 
 export const IIIF_FEATURE_BOX_REGION =
   process.env.REACT_APP_IIIF_FEATURE_BOX_REGION ||
