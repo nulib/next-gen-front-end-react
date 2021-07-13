@@ -93,7 +93,7 @@
     "prettier": "^2.3.2",
     "prop-types": "^15.6.1",
     "react-router-prop-types": "^1.0.5",
-    "start-server-and-test": "^1.12.5"
+    "start-server-and-test": "^1.12.6"
   },
   "browserslist": [
     ">0.2%",
